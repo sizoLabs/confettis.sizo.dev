@@ -1,0 +1,21 @@
+---
+
+import Layout from '@layout/home.layout.astro';
+
+import Home from '@component/home/index';
+import Background from '@component/home/background';
+import Usage from '@component/home/usage';
+import Confettis from '@component/home/confettis';
+import Author from '@component/home/author';
+import Footer from '@component/home/footer';
+
+---
+
+<Layout>
+	<Background client:load />
+	<Home client:load />
+	<Usage client:load />
+	<Confettis client:load />
+	<Author client:load />
+	<Footer client:load />
+</Layout>

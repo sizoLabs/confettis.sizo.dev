@@ -1,0 +1,124 @@
+/* Fonts */
+
+/* Tabler */
+
+@font-face {
+	font-family: "Tabler";
+	src: url('/fonts/tabler/tabler-icons.ttf') format("truetype");
+}
+
+/* Inter */
+
+@font-face {
+	font-family: "Inter Regular";
+	src: url('/fonts/inter/Inter-Regular.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "Inter Medium";
+	src: url('/fonts/inter/Inter-Medium.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "Inter Thin";
+	src: url('/fonts/inter/Inter-Thin.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "Inter Light";
+	src: url('/fonts/inter/Inter-Light.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "Inter Black";
+	src: url('/fonts/inter/Inter-Black.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "Inter Bold";
+	src: url('/fonts/inter/Inter-Bold.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "Inter ExtraBold";
+	src: url('/fonts/inter/Inter-ExtraBold.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "Inter SemiBold";
+	src: url('/fonts/inter/Inter-SemiBold.ttf') format("truetype");
+}
+
+/* Base Neue */
+
+@font-face {
+	font-family: "BaseNeue Regular";
+	src: url('/fonts/neue/BaseNeue-Regular.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "BaseNeue Medium";
+	src: url('/fonts/neue/BaseNeue-Medium.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "BaseNeue Light";
+	src: url('/fonts/neue/BaseNeue-Light.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "BaseNeue Black";
+	src: url('/fonts/neue/BaseNeue-Black.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "BaseNeue Bold";
+	src: url('/fonts/neue/BaseNeue-Bold.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "BaseNeue ExtraBold";
+	src: url('/fonts/neue/BaseNeue-ExtraBold.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "BaseNeue SemiBold";
+	src: url('/fonts/neue/BaseNeue-SemiBold.ttf') format("truetype");
+}
+
+/* DM Sans */
+
+@font-face {
+	font-family: "DMSans Regular";
+	src: url('/fonts/dmsans/DMSans-Regular.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "DMSans Medium";
+	src: url('/fonts/dmsans/DMSans-Medium.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "DMSans Light";
+	src: url('/fonts/dmsans/DMSans-Light.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "DMSans Black";
+	src: url('/fonts/dmsans/DMSans-Black.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "DMSans Bold";
+	src: url('/fonts/dmsans/DMSans-Bold.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "DMSans ExtraBold";
+	src: url('/fonts/dmsans/DMSans-ExtraBold.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "DMSans SemiBold";
+	src: url('/fonts/dmsans/DMSans-SemiBold.ttf') format("truetype");
+}

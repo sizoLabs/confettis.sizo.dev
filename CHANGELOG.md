@@ -1,5 +1,12 @@
 # Changelog
 
+### 0.7
+
+Release 3 jul 2025
+
+  * Refactor with Astro and Tailwind CSS
+  * Convert all components to React
+
 ### 0.6.6
 
 Release 18 oct 2023

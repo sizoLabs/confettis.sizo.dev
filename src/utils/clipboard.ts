@@ -1,7 +1,8 @@
 const copyToClipboard = (event: MouseEvent) => {
 
-    const buttonElement = event.target as HTMLButtonElement
-    const value = buttonElement.attributes[1].value
+    const buttonElement = event.currentTarget as HTMLButtonElement
+    // Usar atributo personalizado para obtener el valor a copiar
+    const value = buttonElement.getAttribute('aria-label') || ''
     const hiddenElement = document.createElement('textarea')
 
     hiddenElement.value = value
@@ -13,8 +14,15 @@ const copyToClipboard = (event: MouseEvent) => {
     document.execCommand('copy')
     document.body.removeChild(hiddenElement)
 
-    buttonElement.style.backgroundColor = 'rgb(145 227 91 / 57%)'
-    buttonElement.innerHTML = value + ' <i class="ti ti-clipboard-check text-[18px] align-middle mt-[-2px] inline-block ml-1"></i>'
+    buttonElement.style.backgroundColor = 'rgb(96 255 50 / 57%)'
+
+    // Cambiar solo el icono si existe
+    const icon = buttonElement.querySelector('i')
+    if (icon) {
+        icon.className = "ti ti-clipboard-check text-[18px] align-middle mt-[-2px] inline-block ml-1"
+    }
+    // Cambiar solo el texto (sin el icono)
+    buttonElement.childNodes[0].textContent = value + ' '
 
     setTimeout(() => {
         buttonElement.style.backgroundColor = 'rgb(0 0 0 / 9%)'

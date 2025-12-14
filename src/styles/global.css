@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import "./fonts.css";
+@import "./site.css";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+
+    /* Fonts */
+
+    --font-inter-black: "Inter Black";
+    --font-inter-extrabold: "Inter ExtraBold";
+    --font-inter-bold: "Inter Bold";
+    --font-inter-semibold: "Inter SemiBold";
+    --font-inter: "Inter Regular";
+    --font-inter-medium: "Inter Medium";
+    --font-inter-light: "Inter Light";
+    --font-inter-thin: "Inter Thin";
+
+    --font-neue-black: "BaseNeue Black";
+    --font-neue-extrabold: "BaseNeue ExtraBold";
+    --font-neue-bold: "BaseNeue Bold";
+    --font-neue-semibold: "BaseNeue SemiBold";
+    --font-neue: "BaseNeue Regular";
+    --font-neue-medium: "BaseNeue Medium";
+    --font-neue-light: "BaseNeue Light";
+
+    --font-dm-black: "DMSans Black";
+    --font-dm-extrabold: "DMSans ExtraBold";
+    --font-dm-bold: "DMSans Bold";
+    --font-dm-semibold: "DMSans SemiBold";
+    --font-dm: "DMSans Regular";
+    --font-dm-medium: "DMSans Medium";
+    --font-dm-light: "DMSans Light";
+
+    --font-tabler: "Tabler";
+
+    /* Colors */
+
+    --color-primary: #00FFD4;
+    --color-secondary: #9000FF;
+    --color-darker: #191b26;
+    --color-minimal: rgba(255,255,255,0.03);
+
+    --color-bluesky: #1C8CF8;
+
+}
