@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.7.1
+
+  * Updated to confettis [`v.0.4.1`](https://github.com/ovniroto/confettis/releases/tag/v0.4.1)
+
 ### 0.7
 
 Release 3 jul 2025
