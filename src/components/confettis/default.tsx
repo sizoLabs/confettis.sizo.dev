@@ -20,5 +20,7 @@ export default function DefaultConfettiBlock() {
 }
 
 const createConfetti = () => {
-    confetti.create()
+    confetti.create({
+        canvas: "confetti-panel"
+    })
 }

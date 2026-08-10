@@ -14,7 +14,7 @@ const maxConfettiSpeed = 30
 const minConfettiGravity = 0.6
 const maxConfettiGravity = 1.1
 
-const colors = [ '#50f29c', '#FFFFFF' ]
+const colors = [ '#FFC43A', '#FFFFFF' ]
 
 const createParty = () => {
 
@@ -106,12 +106,13 @@ const createConfetti = () => {
     const minConfettiGravity = 0.6
     const maxConfettiGravity = 1.1
 
-    const colors = [ '#50f29c', '#FFFFFF' ]
+    const colors = [ '#FFC43A', '#FFFFFF' ]
 
     const createParty = () => {
 
         // Left Confetti
         confetti.create({
+            canvas: "confetti-panel",
             x: 0.001,
             y: 0.5,
             count: 3,
@@ -136,6 +137,7 @@ const createConfetti = () => {
 
         // Right Confetti
         confetti.create({
+            canvas: "confetti-panel",
             x: 1.999,
             y: 0.5,
             count: 3,

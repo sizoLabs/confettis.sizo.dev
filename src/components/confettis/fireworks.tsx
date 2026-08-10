@@ -128,19 +128,12 @@ const createConfetti = () => {
     const maxPos = 0.9
 
     const fireworkColors = [
-
         [ '#2466FF', '#24B3FF', '#24D4FF', '#24FFFC', '#78FFF3', '#B2FFF8' ],
-        
         [ '#B218FF', '#BD39FF', '#CD67FF', '#DA8EFF', '#E4ADFF', '#F5E1FF' ],
-
         [ '#FF2488', '#FF24BD', '#FF59CD', '#FF7AF5', '#FA99FF', '#FDD6FF' ],
-
         [ '#FF5920', '#FF7141', '#FF8C65', '#FFA587', '#FFC0AB', '#FFE0D6' ],
-
         [ '#FFB61B', '#FFC13C', '#FFD16D', '#FFE09D', '#FFE7B3', '#FFF2D4' ],
-
         [ '#6DFF24', '#8DFF54', '#A6FF7A', '#98FF96', '#B2FFB1', '#DEFFDE' ]
-
     ]
 
     const createFirework = () => {
@@ -153,6 +146,7 @@ const createConfetti = () => {
 
         // Fireworks
         confetti.create({
+            canvas: "confetti-panel",
             x: xPos,
             y: yPos,
             count: randomNumber(minFireworkCount, maxFireworkCount),
@@ -177,6 +171,7 @@ const createConfetti = () => {
 
         // Particles
         confetti.create({
+            canvas: "confetti-panel",
             x: xPos,
             y: yPos,
             count: randomNumber(minFireworkCount, maxFireworkCount),

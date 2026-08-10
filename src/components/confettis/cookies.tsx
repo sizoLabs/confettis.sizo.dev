@@ -72,6 +72,7 @@ const createConfetti = () => {
 
     // Cookies
     confetti.create({
+        canvas: "confetti-panel",
         x: 0.5,
         y: 0.7,
         count: 1,
@@ -89,6 +90,7 @@ const createConfetti = () => {
 
         // Particles
         confetti.create({
+            canvas: "confetti-panel",
             x: 0.5,
             y: 1.9999,
             count: 50,

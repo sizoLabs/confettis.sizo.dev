@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.8
+
+  * Redesign website
+
 ### 0.7.1
 
   * Updated to confettis [`v.0.4.1`](https://github.com/ovniroto/confettis/releases/tag/v0.4.1)

@@ -122,6 +122,7 @@ const createConfetti = () => {
 
         // Emojis
         confetti.create({
+            canvas: "confetti-panel",
             x: xPos,
             y: yPos,
             count: randomNumber(minEmojiCount, maxEmojiCount),
@@ -141,6 +142,7 @@ const createConfetti = () => {
 
         // Particles
         confetti.create({
+            canvas: "confetti-panel",
             x: xPos,
             y: yPos,
             count: randomNumber(20, 60),

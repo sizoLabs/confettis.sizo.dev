@@ -4,7 +4,7 @@ import ConfettiBlock from "@component/ui/block"
 export default function AdvancedConfettiBlock() {
 
     const code = `const x = 0.5
-const y = 0.7
+const y = 0.6
 
 // Confetti
 confetti.create({
@@ -51,10 +51,11 @@ confetti.create({
 const createConfetti = () => {
 
     const x = 0.5
-    const y = 0.7
+    const y = 0.6
     
     // Confetti
     confetti.create({
+        canvas: "confetti-panel",
         x: x,
         y: y,
         count: 100,
@@ -68,6 +69,7 @@ const createConfetti = () => {
 
     // Particles
     confetti.create({
+        canvas: "confetti-panel",
         x: x,
         y: y,
         count: 42,

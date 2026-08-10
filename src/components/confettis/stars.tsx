@@ -83,6 +83,7 @@ const createConfetti = () => {
 
     // Stars
     confetti.create({
+        canvas: "confetti-panel",
         x: 0.5,
         y: 0.5,
         count: randomNumber(minStarCount, maxStarCount),
@@ -102,6 +103,7 @@ const createConfetti = () => {
 
     // Particles
     confetti.create({
+        canvas: "confetti-panel",
         x: 0.5,
         y: 0.5,
         count: randomNumber(minStarCount, maxStarCount),

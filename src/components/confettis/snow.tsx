@@ -70,6 +70,7 @@ const createConfetti = () => {
 
     const createSnow = () => {
         confetti.create({
+            canvas: "confetti-panel",
             x: randomNumber(0, 1),
             y: 0.0001,
             count: 1,

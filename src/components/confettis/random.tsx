@@ -4,7 +4,7 @@ import ConfettiBlock from "@component/ui/block"
 export default function RandomConfettiBlock() {
 
     const code = `const x = 0.5
-const y = 0.7
+const y = 0.6
 
 const minCount = 50
 const maxCount = 90
@@ -52,7 +52,7 @@ function randomNumber(min, max) {
 const createConfetti = () => {
 
     const x = 0.5
-    const y = 0.7
+    const y = 0.6
 
     const minCount = 50
     const maxCount = 90
@@ -64,6 +64,7 @@ const createConfetti = () => {
     const maxSpeed = 50
     
     confetti.create({
+        canvas: "confetti-panel",
         x: x,
         y: y,
         count: randomNumber(minCount, maxCount),
@@ -72,8 +73,7 @@ const createConfetti = () => {
         decay: 0.93,
         speed: randomNumber(minSpeed, maxSpeed),
         angle: randomNumber(minAngle, maxAngle),
-        static: false,
-        scales: [ 0.5, 0.7, 0.8 ],
+        scale: [ 0.5, 0.7, 0.8 ],
         shapes: [ 'square', 'ellipse' ]
     })
 

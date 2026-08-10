@@ -14,7 +14,7 @@ export default function Check(props: React.HTMLAttributes<HTMLButtonElement>) {
     })
 
     return (
-        <div className="mt-[25px]">
+        <div className="relative w-full max-h-80 squircle squircle-md backdrop-blur-5xl border border-white/10 overflow-y-scroll no-scrollbar-but-scroll">
             <pre>
                 <code className={ props.className }>
                     { props.children }

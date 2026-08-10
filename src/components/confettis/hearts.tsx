@@ -38,7 +38,7 @@ const createHeart = () => {
         decay: 0.92,
         spread: 80,
         shapes: [ 'emoji' ],
-        emojis: [ '❤️' ]
+        emojis: [ '❤️','🩷','🧡','💛','💚','💙','🩵','💜','🤎','🖤','🩶','🤍' ]
     })
 
 }
@@ -85,6 +85,7 @@ const createConfetti = () => {
 
         // Hearts
         confetti.create({
+            canvas: "confetti-panel",
             x: 0.5,
             y: 0.5,
             count: 3,
@@ -105,7 +106,7 @@ const createConfetti = () => {
             decay: 0.92,
             spread: 80,
             shapes: [ 'emoji' ],
-            emojis: [ '❤️' ]
+            emojis: [ '❤️','🩷','🧡','💛','💚','💙','🩵','💜','🤎','🖤','🩶','🤍' ]
         })
 
     }
