@@ -14,7 +14,7 @@ export default function HowToUse() {
 
                 <div className="z-50 relative mx-auto flex min-h-full w-full max-w-full flex-col items-center justify-center p-5 md:max-w-200">
                     
-                    <h2 className="text-3xl md:text-7xl font-inter-black mb-10 text-center">
+                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-inter-black mb-10 text-center">
                         How to use
                     </h2>
 

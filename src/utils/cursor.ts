@@ -1,28 +1,37 @@
 
-const getCursorPosition = (event: React.MouseEvent<HTMLButtonElement>, canvasId = 'confetti-panel') => {
+const getCursorPosition = (event: any, canvasId = 'confetti-panel') => {
 
-    const clientX = event.clientX
-    const clientY = event.clientY
+    // soporte para eventos touch/pointer/mouse
+    let clientX = 0
+    let clientY = 0
 
-    let elementWidth = document.documentElement.clientWidth
-    let elementHeight = document.documentElement.clientHeight
-    let offsetLeft = 0
-    let offsetTop = 0
-
-    const canvas = document.getElementById(canvasId) as HTMLCanvasElement | null
-    if (canvas && canvas.parentElement) {
-        const rect = canvas.parentElement.getBoundingClientRect()
-        elementWidth = Math.max(1, rect.width)
-        elementHeight = Math.max(1, rect.height)
-        offsetLeft = rect.left
-        offsetTop = rect.top
+    if (event.touches && event.touches[0]) {
+        clientX = event.touches[0].clientX
+        clientY = event.touches[0].clientY
+    } else if (event.changedTouches && event.changedTouches[0]) {
+        clientX = event.changedTouches[0].clientX
+        clientY = event.changedTouches[0].clientY
+    } else if (typeof event.clientX === 'number' && typeof event.clientY === 'number') {
+        clientX = event.clientX
+        clientY = event.clientY
+    } else if (event.nativeEvent && event.nativeEvent.clientX) {
+        clientX = event.nativeEvent.clientX
+        clientY = event.nativeEvent.clientY
     }
 
-    const x = (clientX - offsetLeft) / elementWidth
-    const y = (clientY - offsetTop) / elementHeight
+    // calcular respecto al canvas (no al documento) para evitar offsets por paddings/márgenes
+    const canvas = document.getElementById(canvasId) as HTMLCanvasElement | null
+    let rect = { left: 0, top: 0, width: document.documentElement.clientWidth, height: document.documentElement.clientHeight }
+    if (canvas) {
+        const r = canvas.getBoundingClientRect()
+        rect = { left: r.left, top: r.top, width: Math.max(1, r.width), height: Math.max(1, r.height) }
+    }
 
-    const xPos = Math.max(0, Math.min(1, x))
-    const yPos = Math.max(0, Math.min(1, y))
+    const x = (clientX - rect.left) / rect.width
+    const y = (clientY - rect.top) / rect.height
+
+    const xPos = Math.max(0, Math.min(1, x || 0))
+    const yPos = Math.max(0, Math.min(1, y || 0))
 
     return { x: xPos, y: yPos }
 
