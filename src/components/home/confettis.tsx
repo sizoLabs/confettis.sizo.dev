@@ -53,18 +53,16 @@ export default function Confettis() {
         const parent = canvas.parentElement
         if (!parent) return
 
-        const dpr = window.devicePixelRatio || 1
-
         const resize = () => {
             const rect = parent.getBoundingClientRect()
             const w = Math.max(0, Math.round(rect.width))
             const h = Math.max(0, Math.round(rect.height))
             canvas.style.width = `${w}px`
             canvas.style.height = `${h}px`
-            canvas.width = Math.round(w * dpr)
-            canvas.height = Math.round(h * dpr)
+            canvas.width = w
+            canvas.height = h
             const ctx = canvas.getContext('2d')
-            if (ctx) ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+            if (ctx) ctx.setTransform(1, 0, 0, 1, 0, 0)
         }
 
         resize()
@@ -89,7 +87,7 @@ export default function Confettis() {
 
             <div className="z-50 absolute flex h-full w-full flex-col items-center justify-center p-10">
                 
-                <h2 className="text-3xl md:text-8xl font-inter-black">
+                <h2 className="text-3xl md:text-5xl lg:text-8xl font-inter-black">
                     CONFETTIS
                 </h2>
 

@@ -6,7 +6,7 @@ type Props = {
     title: string
     description: string
     toggle?: boolean
-    callback: () => void
+    callback: (event?: any) => void
 }
 
 export default function ConfettiBlock(props: Props) {
@@ -44,18 +44,16 @@ export default function ConfettiBlock(props: Props) {
         const parent = canvas.parentElement
         if (!parent) return
 
-        const dpr = window.devicePixelRatio || 1
-
         const resize = () => {
             const rect = parent.getBoundingClientRect()
             const w = Math.max(0, Math.round(rect.width))
             const h = Math.max(0, Math.round(rect.height))
             canvas.style.width = `${w}px`
             canvas.style.height = `${h}px`
-            canvas.width = Math.round(w * dpr)
-            canvas.height = Math.round(h * dpr)
+            canvas.width = w
+            canvas.height = h
             const ctx = canvas.getContext('2d')
-            if (ctx) ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+            if (ctx) ctx.setTransform(1, 0, 0, 1, 0, 0)
         }
 
         resize()
@@ -92,7 +90,7 @@ export default function ConfettiBlock(props: Props) {
                     <div className="mt-4 flex flex-col md:flex-row justify-start gap-3">
 
                         <button
-                            onClick={ () => { props.callback(); props.toggle ? handleToggleConfetti() : "" } }
+                            onPointerDown={ (ev) => { props.callback(ev); props.toggle ? handleToggleConfetti() : "" } }
                             
                             className={`px-4 py-2 squircle squircle-md backdrop-blur-xl border cursor-pointer hover:bg-white/20 hover:border-white/50 duration-300 font-inter-bold ${ toggleActive
                                 ? "bg-white/20 border-white/60 text-white"
