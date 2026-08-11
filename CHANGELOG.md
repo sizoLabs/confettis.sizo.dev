@@ -1,5 +1,12 @@
 # Changelog
 
+### 0.8.3
+
+Release 11 aug 2026
+
+  * Improved design
+  * Improved mobile version
+
 ### 0.8.2
 
 Release 11 aug 2026

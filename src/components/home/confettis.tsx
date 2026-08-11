@@ -81,13 +81,13 @@ export default function Confettis() {
     }, [])
 
     return (
-        <div className="relative bg-white/5 w-full h-full squircle squircle-md backdrop-blur-5xl border border-white/20 overflow-hidden">
+        <div className="relative bg-white/2 w-full h-full squircle squircle-md backdrop-blur-5xl border border-white/10 overflow-hidden">
 
             <canvas className="absolute pointer-events-none z-90 h-full w-full" id="confetti-panel"></canvas>
 
             <div className="z-50 absolute flex h-full w-full flex-col items-center justify-center p-10">
                 
-                <h2 className="text-3xl md:text-5xl lg:text-8xl font-inter-black">
+                <h2 className="text-3xl md:text-5xl lg:text-8xl font-inter-black text-primary">
                     CONFETTIS
                 </h2>
 
