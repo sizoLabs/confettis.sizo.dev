@@ -1,5 +1,11 @@
 # Changelog
 
+### 0.8.2
+
+Release 11 aug 2026
+
+  * Restore testing dots
+
 ### 0.8.1
 
 Release 11 aug 2026

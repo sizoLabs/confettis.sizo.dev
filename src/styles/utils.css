@@ -114,3 +114,10 @@
 .no-scrollbar-but-scroll::-webkit-scrollbar {
     display: none;
 }
+
+/* Testing Dots */
+
+.testing-dots {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 1) 1px, transparent 1px);
+    background-size: 18px 18px;
+}
