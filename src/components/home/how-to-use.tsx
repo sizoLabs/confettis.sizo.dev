@@ -8,7 +8,7 @@ const localUrl = `/lib/confettis.min.js`
 export default function HowToUse() {
 
     return (
-        <div className="relative bg-white/5 w-full h-full squircle squircle-md backdrop-blur-5xl border border-white/20 overflow-hidden">
+        <div className="relative bg-white/2 w-full h-full squircle squircle-md backdrop-blur-5xl border border-white/10 overflow-hidden">
 
             <div className="absolute inset-0 overflow-y-scroll no-scrollbar-but-scroll">
 
