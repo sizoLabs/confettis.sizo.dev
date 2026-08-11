@@ -2,6 +2,8 @@
 
 ### 0.8
 
+Release 10 aug 2026
+
   * Redesign website
 
 ### 0.7.1
