@@ -1,6 +1,15 @@
 # Changelog
 
+### 0.8.1
+
+Release 11 aug 2026
+
+  * Remove unused font files
+  * Add utility styles
+
 ### 0.8
+
+Release 10 aug 2026
 
   * Redesign website
 
