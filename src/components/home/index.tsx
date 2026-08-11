@@ -25,17 +25,17 @@ export default function Home() {
     const [ activePanel, setActivePanel ] = useState("confettis")
 
     const confettiButtons = [
-        { id: "default", label: "Default", icon: "confetti-filled" },
-        { id: "advanced", label: "Advanced", icon: "bolt-filled" },
+        { id: "default", label: "Default", icon: "confetti" },
+        { id: "advanced", label: "Advanced", icon: "bolt" },
         { id: "random", label: "Random", icon: "atom" },
-        { id: "drop", label: "Drop", icon: "droplets-filled" },
-        { id: "party", label: "Party", icon: "confetti-filled" },
+        { id: "drop", label: "Drop", icon: "droplets" },
+        { id: "party", label: "Party", icon: "confetti" },
         { id: "fireworks", label: "Fireworks", icon: "sparkles" },
         { id: "snow", label: "Snow", icon: "snowflake" },
-        { id: "stars", label: "Stars", icon: "star-filled" },
-        { id: "emojis", label: "Emojis", icon: "mood-smile-filled" },
-        { id: "hearts", label: "Hearts", icon: "heart-filled" },
-        { id: "cookies", label: "Cookies", icon: "cookie-filled" },
+        { id: "stars", label: "Stars", icon: "star" },
+        { id: "emojis", label: "Emojis", icon: "mood-smile" },
+        { id: "hearts", label: "Hearts", icon: "heart" },
+        { id: "cookies", label: "Cookies", icon: "cookie" },
     ]
 
     const handlePanelChange = (panel: string) => {
@@ -66,7 +66,7 @@ export default function Home() {
                                 target="_blank"
                                 title="Confettis en GitHub"
                             >
-                                <i className="ti ti-brand-github-filled text-[18px] align-middle"></i>
+                                <i className="ti ti-brand-github text-[18px] align-middle"></i>
                             </a>
                         </div>
                     </div>
