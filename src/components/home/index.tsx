@@ -51,7 +51,7 @@ export default function Home() {
 
     return (
         <>
-            <div className={`${mobileMenuOpen ? "block" : "hidden"} absolute z-9999 backdrop-blur-xl w-full flex flex-col p-3 gap-1 h-screen mt-12 border-t border-white/10 md:hidden`}>
+            <div className={`${mobileMenuOpen ? "block" : "hidden"} absolute z-9999 w-full flex flex-col p-3 gap-1 h-screen mt-12 border-t border-white/10 md:hidden`}>
 
                 <button
                     onClick={ () => handlePanelChange("how-to-use") }

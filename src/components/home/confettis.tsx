@@ -81,7 +81,7 @@ export default function Confettis() {
     }, [])
 
     return (
-        <div className="relative bg-white/2 w-full h-full squircle squircle-md backdrop-blur-5xl border border-white/10 overflow-hidden">
+        <div className="relative bg-white/2 w-full h-full squircle squircle-md border border-white/10 overflow-hidden">
 
             <canvas className="absolute pointer-events-none z-90 h-full w-full" id="confetti-panel"></canvas>
 
@@ -98,7 +98,7 @@ export default function Confettis() {
                 <div className="flex flex-col md:flex-row gap-3">
 
                     <a
-                        className="text-md font-inter-bold squircle squircle-md px-4 py-3 border text-left duration-300 bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 cursor-pointer backdrop-blur-xl"
+                        className="text-md font-inter-bold squircle squircle-md px-4 py-3 border text-left duration-300 bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 cursor-pointer"
                         href="https://www.npmjs.com/package/confettis"
                         target="_blank"
                         title="View on npmjs.com"
@@ -107,7 +107,7 @@ export default function Confettis() {
                     </a>
 
                     <button
-                        className="text-md font-inter-bold squircle squircle-md px-4 py-3 border text-left duration-300 bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 cursor-pointer backdrop-blur-xl"
+                        className="text-md font-inter-bold squircle squircle-md px-4 py-3 border text-left duration-300 bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 cursor-pointer"
                         onClick={ (ev) => onClickInstall(ev) }
                         aria-label="pnpm install confettis"
                     >
