@@ -6,7 +6,7 @@ Release 20 oct 2026
 
   * Fix slow confettis without gpu acceleration
   * Fix cookie particles position
-  * Remove Deno install (death)
+  * Remove Deno install (dead)
 
 ### 0.8.3
 
