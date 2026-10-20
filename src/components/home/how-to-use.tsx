@@ -8,7 +8,7 @@ const localUrl = `/lib/confettis.min.js`
 export default function HowToUse() {
 
     return (
-        <div className="relative bg-white/2 w-full h-full squircle squircle-md backdrop-blur-5xl border border-white/10 overflow-hidden">
+        <div className="relative bg-white/2 w-full h-full squircle squircle-md -5xl border border-white/10 overflow-hidden">
 
             <div className="absolute inset-0 overflow-y-scroll no-scrollbar-but-scroll">
 
@@ -29,30 +29,15 @@ export default function HowToUse() {
                             <h3 className="text-lg font-inter-medium mb-1">
                                 Install
                             </h3>
-                            <div className="bg-white/5 squircle squircle-md backdrop-blur-xl border border-white/10 px-4 py-3 mb-3">
+                            <div className="bg-white/5 squircle squircle-md border border-white/10 px-4 py-3 mb-3">
                                 pnpm install confettis --save
                             </div>
 
                             <h3 className="text-lg font-inter-medium mb-1">
                                 Import
                             </h3>
-                            <div className="bg-white/5 squircle squircle-md backdrop-blur-xl border border-white/10 px-4 py-3">
+                            <div className="bg-white/5 squircle squircle-md border border-white/10 px-4 py-3">
                                 import * as confetti from "confettis"
-                            </div>
-
-                        </div>
-
-                        <div>
-
-                            <h2 className="text-2xl md:text-4xl font-inter-bold mb-5">
-                                Deno
-                            </h2>
-
-                            <h3 className="text-lg font-inter-medium mb-1">
-                                Import
-                            </h3>
-                            <div className="bg-white/5 squircle squircle-md backdrop-blur-xl border border-white/10 px-4 py-3">
-                                import * as confetti from "https://esm.sh/confettis@{ v }"
                             </div>
 
                         </div>
@@ -66,14 +51,14 @@ export default function HowToUse() {
                             <h3 className="text-lg font-inter-medium mb-1">
                                 CDN
                             </h3>
-                            <div className="bg-white/5 squircle squircle-md backdrop-blur-xl border border-white/10 px-4 py-3 mb-5">
+                            <div className="bg-white/5 squircle squircle-md border border-white/10 px-4 py-3 mb-5">
                                 { `<script src="` + unpkgUrl + `"></script>` }
                             </div>
 
                             <h3 className="text-lg font-inter-medium mb-1">
                                 Local
                             </h3>
-                            <div className="bg-white/5 squircle squircle-md backdrop-blur-xl border border-white/10 px-4 py-3">
+                            <div className="bg-white/5 squircle squircle-md border border-white/10 px-4 py-3">
                                 { `<script src="` + localUrl + `"></script>` }
                             </div>
 

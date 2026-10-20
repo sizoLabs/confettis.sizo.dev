@@ -73,7 +73,7 @@ export default function ConfettiBlock(props: Props) {
 
 	return (
         <>
-            <div className="relative bg-white/2 w-full h-full squircle squircle-md backdrop-blur-5xl border border-white/10 overflow-hidden">
+            <div className="relative bg-white/2 w-full h-full squircle squircle-md -5xl border border-white/10 overflow-hidden">
 
                 <canvas className="absolute pointer-events-none z-90 h-full w-full" id="confetti-panel"></canvas>
 
@@ -92,7 +92,7 @@ export default function ConfettiBlock(props: Props) {
                         <button
                             onPointerDown={ (ev) => { props.callback(ev); props.toggle ? handleToggleConfetti() : "" } }
                             
-                            className={`px-4 py-2 squircle squircle-md backdrop-blur-xl border cursor-pointer hover:bg-white/20 hover:border-white/50 duration-300 font-inter-bold ${ toggleActive
+                            className={`px-4 py-2 squircle squircle-md border cursor-pointer hover:bg-white/20 hover:border-white/50 duration-300 font-inter-bold ${ toggleActive
                                 ? "bg-white/20 border-white/60 text-white"
                                 : "bg-white/10 border-white/20" }
                                 `}
@@ -102,7 +102,7 @@ export default function ConfettiBlock(props: Props) {
                         </button>
 
                         <button
-                            className={`px-4 py-2 squircle squircle-md backdrop-blur-xl border cursor-pointer hover:bg-white/20 hover:border-white/50 duration-300 ${ isCodeVisible
+                            className={`px-4 py-2 squircle squircle-md border cursor-pointer hover:bg-white/20 hover:border-white/50 duration-300 ${ isCodeVisible
                                 ? "bg-white/20 border-white/60 text-white"
                                 : "bg-white/10 border-white/20" }
                                 `}
