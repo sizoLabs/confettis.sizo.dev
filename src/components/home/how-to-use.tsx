@@ -45,21 +45,6 @@ export default function HowToUse() {
                         <div>
 
                             <h2 className="text-2xl md:text-4xl font-inter-bold mb-5">
-                                Deno
-                            </h2>
-
-                            <h3 className="text-lg font-inter-medium mb-1">
-                                Import
-                            </h3>
-                            <div className="bg-white/5 squircle squircle-md border border-white/10 px-4 py-3">
-                                import * as confetti from "https://esm.sh/confettis@{ v }"
-                            </div>
-
-                        </div>
-
-                        <div>
-
-                            <h2 className="text-2xl md:text-4xl font-inter-bold mb-5">
                                 Browser
                             </h2>
 
